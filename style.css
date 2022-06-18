@@ -1,0 +1,166 @@
+/* Style sheet for index.html */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #f0f0f0;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  main {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+  }
+
+  img {
+    width: 3.4rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1.7rem 0;
+  }
+  p {
+    color: #f0f0f0;
+    font-size: 0.73rem;
+  }
+  button {
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    margin-top: 4rem;
+    padding: 0.7rem 1.7rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .padd {
+    padding: 2.5rem;
+  }
+  .first-box {
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    background-color: rgba(207, 144, 27, 0.908);
+  }
+  .first-box button {
+    color: rgba(207, 144, 27, 0.908);
+  }
+  .second-box {
+    background-color: rgb(1, 156, 128);
+  }
+  .second-box button {
+    color: rgb(1, 156, 128);
+  }
+  .third-box {
+    border-bottom-right-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    background-color: rgba(20, 67, 20, 0.881);
+  }
+  .third-box button {
+    color: rgba(20, 67, 20, 0.881);
+  }
+  button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  @media only screen and (max-width: 1024px) {
+    .padd {
+      padding: 1.7rem 1rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 1.4rem 0;
+    }
+    p {
+      font-size: 0.66rem;
+    }
+    button {
+      margin-top: 2rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    p {
+      font-size: 0.6rem;
+    }
+    main {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 425px) {
+    body {
+      padding-bottom: 5rem;
+    }
+    main {
+     display: grid;
+      width: 60%;
+    }
+    .first-box {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 0.6rem;
+    }
+    .third-box {
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0.6rem;
+    }
+  }
+
+
+/* Style sheet for grid.html */
+
+  .container {
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    row-gap: 0.5rem;
+    margin-top: 8rem;
+  }
+  .top-container {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    column-gap: 0.5rem;
+    height: 10rem;
+  }
+  nav {
+    background-color: chocolate;
+    max-width: 100%;
+  }
+  aside {
+    background-color: yellow;
+    max-width: 100%;
+  }
+  .bottom-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+  }
+  .btm1-container section {
+    background-color: green;
+    max-width: 100%;
+    height: 17rem;
+  }
+  .btm2-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0.5rem ;
+    height: 17rem;
+  }
+  .btm2-container article:first-child {
+    background-color: rgb(47, 47, 137);
+    max-width: 100%;
+  }
+  .btm2-container article:last-child {
+    background-color: rgb(47, 47, 137);
+    max-width: 100%;
+  }
